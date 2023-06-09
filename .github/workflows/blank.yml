@@ -1,0 +1,17 @@
+def greeting(name,sname,age) 
+    puts age < 18?  "Привет, #{name} #{sname}. Тебе меньше 18 лет, но начать учиться программировать никогда не рано" 
+    : "Привет, #{name} #{sname}. Самое время заняться делом!"
+end
+    
+def foobar(a, b) 
+    puts a == 20? b: b == 20? a: a+b
+end
+
+greeting("Мария","Жарова", 20)
+greeting("Федя","Малышев", 18)
+greeting("Игорь","Аргатюк", 17)
+
+foobar(10, 20)
+foobar(20,30)
+foobar(30,10)
+foobar(20,20)
